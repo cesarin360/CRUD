@@ -8,6 +8,7 @@ class crud_ci extends CI_Controller {
 		$this->load->helper('form');
 		$this->load->model('Persona');
 	}
+	
 	public function index()
 	{
 		$datos['personas'] =  $this->Persona->seleccionar_todo();
