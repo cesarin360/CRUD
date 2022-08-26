@@ -23,6 +23,10 @@ class crud_ci extends CI_Controller {
 		$persona['am'] = $this->input->post('am');
 		$persona['fn'] = $this->input->post('fn');
 		$persona['genero'] = $this->input->post('genero');
+		$persona['DPI'] = $this->input->post('DPI');
+		$persona['Telefono'] = $this->input->post('Telefono');
+		$persona['correo_electronico'] = $this->input->post('correo_electronico');
+		
 		$this->Persona->agregar($persona);
 		redirect("crud_ci");
 		
@@ -41,6 +45,9 @@ class crud_ci extends CI_Controller {
 		$persona['am'] = $this->input->post('am');
 		$persona['fn'] = $this->input->post('fn');
 		$persona['genero'] = $this->input->post('genero');
+		$persona['DPI'] = $this->input->post('DPI');
+		$persona['Telefono'] = $this->input->post('Telefono');
+		$persona['correo_electronico'] = $this->input->post('correo_electronico');
 		$this->Persona->actualizar($persona, $id);
 		redirect("crud_ci");
 	}
